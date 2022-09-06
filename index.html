@@ -67,9 +67,26 @@
             color: var(--dark-green-color);
         }
 
+        @media screen and (min-width: 30em) {
+            .bg-default-ns {
+                background-color: #00000099;
+                backdrop-filter: blur(8px);
+            }
+
+            .bg-none-ns {
+                background-color: #00000000 !important;
+                backdrop-filter: none;
+            }
+        }
+
         .bg-default {
             background-color: #00000099;
             backdrop-filter: blur(8px);
+        }
+
+        .bg-none {
+            background-color: #00000000;
+            backdrop-filter: none;
         }
 
         .z--1 {
@@ -80,21 +97,21 @@
 
 <body class="bg-black w-100 h-100">
     <div class="bg absolute w-100 h-100 bg-red z--1"></div>
-    <div class="flex w-100 h-100">
-        <div class="pa5 mw6">
-            <div class="white white b bg-default pa3 br4">
+    <div class="pa2 pa5-ns mw-100 mw6-ns h-100 flex flex-column items-center justify-center justify-start-ns">
+        <div class="bg-default br4">
+            <div class="white white b pa4 pb2 br4">
                 <img src="./melonfunction_banner.svg" alt="">
                 <h3 class="ma0 fw9 light-green">Developer</h3>
             </div>
 
-            <div class="white mt3 flex flex-row">
-                <a class="light-green b bg-default pa3 br4 no-underline flex flex-row items-center justify-center"
+            <div class="white ph4 pa4-ns pv0-ns flex flex-column flex-row-ns items-start">
+                <a class="light-green b pl0 pa3 br4 no-underline flex flex-row items-center justify-center"
                     target="_blank" href="https://github.com/melonfunction">
                     <img src="./github.svg" alt="" class="pr2">
                     <p class="ma0">Github</p>
                 </a>
 
-                <a class="light-green b bg-default pa3 br4 ml3 no-underline flex flex-row items-center justify-center"
+                <a class="light-green b pl0 pa3 pt0 pt3-ns br4 no-underline flex flex-row items-center justify-center"
                     target="_blank" href="mailto:brandon@melonfunction.com">
                     <img src="./mail.svg" alt="" class="pr2">
                     <p class="ma0">Email</p>
