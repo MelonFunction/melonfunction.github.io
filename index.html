@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100 ma0 pa0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <title>MelonFunction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
+
+        :root {
+            --tan-color: #f0e5b1ff;
+            --light-green-color: #b5df57ff;
+            --dark-green-color: #5e8b23ff;
+            --tan-color-op: #f0e5b140;
+            --light-green-color-op: #b5df5740;
+            --dark-green-color-op: #5e8b2340;
+        }
+
+        * {
+            font-family: "Nunito", sans-serif;
+        }
+
+        .bg {
+            background: linear-gradient(-45deg, var(--light-green-color-op), var(--dark-green-color-op) 80%),
+                linear-gradient(-75deg, var(--light-green-color), var(--dark-green-color));
+
+            background-size: 300% 300%;
+            animation: gradient 15s ease infinite;
+            animation-timing-function: cubic-bezier(0.1, 0.6, 0.2, 0);
+
+            /* background: linear-gradient(217deg, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0) 70.71%); */
+        }
+
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+                /* transform: rotateZ(0deg); */
+            }
+
+            30% {
+                background-position: 20% 80%;
+                /* transform: rotateZ(120deg); */
+            }
+
+            60% {
+                background-position: 80% 20%;
+                /* transform: rotateZ(120deg); */
+            }
+
+            100% {
+                background-position: 0% 0%;
+                /* transform: rotateZ(90deg); */
+            }
+        }
+
+        .tan {
+            color: var(--tan-color);
+        }
+
+        .light-green {
+            color: var(--light-green-color);
+        }
+
+        .dark-green {
+            color: var(--dark-green-color);
+        }
+
+        .bg-default {
+            background-color: #00000099;
+            backdrop-filter: blur(8px);
+        }
+
+        .z--1 {
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="bg-black w-100 h-100">
+    <div class="bg absolute w-100 h-100 bg-red z--1">
+
+    </div>
+    <div class="flex w-100 h-100">
+        <div class="pa5 mw6">
+            <div class="white white b bg-default pa3 br4">
+                <img src="./melonfunction_banner.svg" alt="">
+                <h3 class="ma0 fw9 light-green">Developer</h3>
+            </div>
+
+            <div class="white mt3 flex flex-row">
+                <a class="light-green b bg-default pa3 br4 no-underline flex flex-row items-center justify-center"
+                    target="_blank" href="https://github.com/melonfunction">
+                    <img src="./github.svg" alt="" class="pr2">
+                    <p class="ma0">Github</p>
+                </a>
+
+                <a class="light-green b bg-default pa3 br4 ml3 no-underline flex flex-row items-center justify-center"
+                    target="_blank" href="mailto:brandon@melonfunction.com">
+                    <img src="./mail.svg" alt="" class="pr2">
+                    <p class="ma0">Email</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
