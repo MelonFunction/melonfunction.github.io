@@ -17,9 +17,9 @@
             --tan-color: #f0e5b1ff;
             --light-green-color: #b5df57ff;
             --dark-green-color: #5e8b23ff;
-            --tan-color-op: #f0e5b140;
-            --light-green-color-op: #b5df5740;
-            --dark-green-color-op: #5e8b2340;
+            --tan-color-op: #f0e5b180;
+            --light-green-color-op: #b5df5780;
+            --dark-green-color-op: #5e8b2380;
         }
 
         * {
@@ -28,9 +28,9 @@
 
         .bg {
             background: linear-gradient(-45deg, var(--light-green-color-op), var(--dark-green-color-op) 80%),
-                linear-gradient(-75deg, var(--light-green-color), var(--dark-green-color));
+                linear-gradient(-85deg, var(--tan-color), var(--dark-green-color) 40%);
             background-size: 300% 300%;
-            animation: gradient 15s cubic-bezier(0.1, 0.6, 0.2, 0) infinite;
+            animation: gradient 15s cubic-bezier(0.3, 0.6, 0.5, 0) infinite;
         }
 
         @keyframes gradient {
@@ -40,12 +40,12 @@
             }
 
             30% {
-                background-position: 20% 80%;
+                background-position: 0% 100%;
                 /* transform: rotateZ(120deg); */
             }
 
             60% {
-                background-position: 80% 20%;
+                background-position: 100% 0%;
                 /* transform: rotateZ(120deg); */
             }
 
