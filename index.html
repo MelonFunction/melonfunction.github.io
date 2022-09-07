@@ -14,6 +14,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
 
         :root {
+            --transparent-color: #00000000;
             --tan-color: #f0e5b1ff;
             --light-green-color: #b5df57ff;
             --dark-green-color: #5e8b23ff;
@@ -27,31 +28,30 @@
         }
 
         .bg {
-            background: linear-gradient(-45deg, var(--light-green-color-op), var(--dark-green-color-op) 80%),
-                linear-gradient(-85deg, var(--tan-color), var(--dark-green-color) 40%);
+            background:
+                linear-gradient(-65deg, var(--light-green-color-op), var(--transparent-color) 50%),
+                linear-gradient(-95deg, var(--tan-color-op), var(--dark-green-color) 90%),
+                linear-gradient(-35deg, var(--transparent-color), var(--light-green-color-op) 50%),
+                linear-gradient(-5deg, var(--tan-color), var(--dark-green-color) 50%);
             background-size: 300% 300%;
-            animation: gradient 15s cubic-bezier(0.3, 0.6, 0.5, 0) infinite;
+            animation: gradient 20s ease infinite;
         }
 
         @keyframes gradient {
             0% {
-                background-position: 0% 0%;
-                /* transform: rotateZ(0deg); */
+                background-position: 20% 20%;
             }
 
             30% {
-                background-position: 0% 100%;
-                /* transform: rotateZ(120deg); */
+                background-position: 50% 80%;
             }
 
             60% {
-                background-position: 100% 0%;
-                /* transform: rotateZ(120deg); */
+                background-position: 20% 90%;
             }
 
             100% {
-                background-position: 0% 0%;
-                /* transform: rotateZ(90deg); */
+                background-position: 20% 20%;
             }
         }
 
