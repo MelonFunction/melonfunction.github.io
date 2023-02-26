@@ -28,13 +28,14 @@
         }
 
         .bg {
-            background:
+            /* background:
                 linear-gradient(-65deg, var(--light-green-color-op), var(--transparent-color) 50%),
                 linear-gradient(-95deg, var(--tan-color-op), var(--dark-green-color) 90%),
                 linear-gradient(-35deg, var(--transparent-color), var(--light-green-color-op) 50%),
                 linear-gradient(-5deg, var(--tan-color), var(--dark-green-color) 50%);
             background-size: 300% 300%;
-            animation: gradient 20s ease infinite;
+            animation: gradient 20s ease infinite; */
+            background-color: var(--light-green-color)
         }
 
         @keyframes gradient {
@@ -78,10 +79,10 @@
     </style>
 </head>
 
-<body class="bg-black w-100 h-100">
-    <div class="bg absolute w-100 h-100 bg-red z--1"></div>
-    <div class="pa2 pa5-ns mw-100 mw6-ns h-100 flex flex-column items-center justify-center justify-start-ns">
-        <div class="bg-default br4">
+<body class="bg-black w-100 min-h-100">
+    <div class="bg absolute w-100 vh-75 bg-red z--1"></div>
+    <div class="pa2 pa5-ns mw-100 mw6-ns vh-75 flex flex-column items-center justify-center justify-start-ns ">
+        <div class="bg-default br4 w-100">
             <div class="white white b pa4 pb2 br4">
                 <img src="./melonfunction_banner.svg" alt="">
                 <h3 class="ma0 fw9 light-green">Developer</h3>
@@ -99,9 +100,60 @@
                     <img src="./mail.svg" alt="" class="pr2">
                     <p class="ma0">Email</p>
                 </a>
+
+                <a class="light-green b pl0 pa3 pt0 pt3-ns br4 no-underline flex flex-row items-center justify-center"
+                    target="_blank" href="todo">
+                    <img src="./discord.svg" alt="" class="pr2">
+                    <p class="ma0">Discord</p>
+                </a>
             </div>
         </div>
     </div>
+
+    <div class="bg-default br4 mt4 w-100">
+        <div class="white white b br4">
+            <h2 class="ma0 fw9 ph4 light-green">Projects I'm working on:</h2>
+
+            <div class="flex flex-column flex-row-ns w-100 w-two-thirds-l">
+                <div class="mt4 b pa4 w-100 w-third-ns">
+                    <a href="https://melonfunction.itch.io/5-minute-fighter" class="no-underline">
+                        <h3 class="ma0 fw9 mb3 light-green">5 Minute Fighter</h3>
+
+                        <img class="br4"
+                            src="https://img.itch.zone/aW1hZ2UvMTk0MzY2MS8xMTQyNzQxNi5wbmc=/original/LrfrtR.png" alt="">
+
+                        <p class="light-green mb0 mt3">I'm working on a simple space themed survival game where the
+                            aim is to survive 5 minutes and unlock all of the playable characters with coins that you
+                            collect.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="mt4 b pa4 w-100 w-third-ns">
+                    <a href="https://github.com/MelonFunction/pixel" class="no-underline">
+                        <h3 class="ma0 fw9 mb3 light-green">MelonPixel</h3>
+
+                        <img class="br4"
+                            src="https://raw.githubusercontent.com/MelonFunction/pixel/master/screenshot.png" alt="">
+
+                        <p class="light-green mb0 mt3">
+                            This tool was created because the existing program that I used wouldn't work well on my 4k
+                            monitors and had some annoying workflow quirks. I designed this program to my exact needs,
+                            and it has helped with creating simple sprites for small games and prototypes that I enjoy
+                            working on in my free time.
+                        </p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
 </body>
 
 </html>
